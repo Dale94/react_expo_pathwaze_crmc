@@ -162,7 +162,7 @@ const HomeScreen = ({ navigation }) => {
 										<Fontisto
 											style={styles.home_icon}
 											name="home"
-											size={30}
+											size={25}
 											color="white"
 										/>
 									</TouchableOpacity>
@@ -354,8 +354,8 @@ const styles = StyleSheet.create({
 	},
 
 	home_container: {
-		height: 50,
-		width: 50,
+		height: 40,
+		width: 40,
 		backgroundColor: "red",
 		justifyContent: "center",
 		alignItems: "center",
@@ -365,7 +365,7 @@ const styles = StyleSheet.create({
 	crmc_text: {
 		color: "white",
 		fontFamily: "plusrounded_bold",
-		fontSize: 15,
+		fontSize: 12,
 		left: 15,
 	},
 
