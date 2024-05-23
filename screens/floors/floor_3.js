@@ -312,6 +312,7 @@ const FloorMap3 = () => {
 
 	return (
 		<View style={styles.container}>
+			<Text style={styles.floor_text}>Third Floor</Text>
 			<ImageBackground
 				style={styles.backgroundImage}
 				source={require("../../assets/images/3rd_floor.png")}
@@ -387,6 +388,14 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		backgroundColor: "#fff",
+	},
+	floor_text: {
+		color: "white",
+		position: "absolute",
+		fontFamily: "plusrounded_bold",
+		fontSize: 24,
+		top: 20,
+		left: 30,
 	},
 	backgroundImage: {
 		flex: 1,

@@ -113,6 +113,7 @@ const FireExstinguisher = ({ navigation }) => {
 						<View style={[styles.circle, styles.pos5]}></View>
 						<View style={[styles.circle, styles.pos6]}></View>
 						<View style={[styles.circle, styles.pos7]}></View>
+						<View style={[styles.circle, styles.pos7_7]}></View>
 					</ImageBackground>
 				</View>
 			)}
@@ -153,7 +154,6 @@ const FireExstinguisher = ({ navigation }) => {
 				locationvalue == "428" ||
 				locationvalue == "429" ||
 				locationvalue == "430" ||
-				locationvalue == "431" ||
 				locationvalue == "avr" ||
 				locationvalue == "Rooftop") && (
 				<View style={styles.body}>
@@ -265,78 +265,83 @@ const styles = StyleSheet.create({
 	},
 
 	pos1: {
-		top: 130,
+		top: 180,
 		left: 20,
 	},
 
 	pos2: {
-		top: 70,
-		left: 260,
+		top: 110,
+		left: 200,
 	},
 
 	pos3: {
-		top: 220,
-		left: 260,
+		top: 200,
+		left: 240,
 	},
 
 	pos4: {
-		top: 180,
-		left: 80,
+		top: 150,
+		left: 50,
 	},
 
 	pos5: {
-		top: 320,
-		left: 310,
+		top: 300,
+		left: 230,
 	},
 
 	pos6: {
 		top: 190,
-		left: 90,
+		left: 60,
 	},
 
 	pos7: {
-		top: 350,
-		left: 90,
+		top: 340,
+		left: 60,
+	},
+
+	pos7_7: {
+		top: 0,
+		left: 180,
 	},
 
 	pos8: {
-		top: 320,
-		left: 310,
+		top: 300,
+		left: 230,
 	},
 
 	pos9: {
 		top: 190,
-		left: 90,
+		left: 60,
 	},
 
 	pos10: {
 		top: 260,
-		left: 90,
+		left: 60,
 	},
 
 	pos11: {
-		top: -30,
-		left: 280,
+		top: 0,
+		left: 200,
 	},
 
 	pos12: {
 		top: 190,
-		left: 90,
+		left: 70,
 	},
 
 	pos13: {
 		top: 350,
-		left: 90,
+		left: 70,
 	},
 
 	pos14: {
-		top: 10,
-		left: 280,
+		top: 50,
+		left: 200,
 	},
 
 	pos15: {
-		top: 130,
-		left: 280,
+		top: 135,
+		left: 220,
 	},
 });
 

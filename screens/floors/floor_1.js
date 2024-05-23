@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import { View, StyleSheet, ImageBackground } from "react-native";
+import { View, StyleSheet, ImageBackground, Text } from "react-native";
 import Svg, {
 	Rect,
 	Line,
@@ -99,7 +99,7 @@ const getNeighbors = (node, grid) => {
 	return neighbors;
 };
 
-const FloorMap2 = () => {
+const FloorMap1 = () => {
 	const obstacles = useMemo(() => {
 		const obs = [];
 		for (let i = 10; i <= 35; i++) {
@@ -207,8 +207,8 @@ const FloorMap2 = () => {
 				return grid[3][22];
 			case "pres_office":
 				return grid[3][22];
-			// case "accounting":
-			// 	return grid[3][15];
+			case "accounting":
+				return grid[3][15];
 			case "cashier":
 				return grid[4][5];
 			case "registrar_office":
@@ -274,6 +274,7 @@ const FloorMap2 = () => {
 				style={styles.backgroundImage}
 				source={require("../../assets/images/1st_floor.png")}
 			>
+				<Text style={styles.floor_text}>First Floor</Text>
 				<Svg
 					height={rows * cellSize}
 					width={cols * cellSize}
@@ -348,6 +349,15 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		backgroundColor: "#fff",
 	},
+
+	floor_text: {
+		color: "white",
+		position: "absolute",
+		fontFamily: "plusrounded_bold",
+		fontSize: 24,
+		top: 20,
+		left: 30,
+	},
 	backgroundImage: {
 		flex: 1,
 		width: "100%",
@@ -361,4 +371,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default FloorMap2;
+export default FloorMap1;

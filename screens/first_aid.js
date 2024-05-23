@@ -255,27 +255,27 @@ const styles = StyleSheet.create({
 
 	pos1: {
 		top: 290,
-		left: 30,
+		left: 10,
 	},
 
 	pos2: {
 		top: 290,
-		left: 90,
+		left: 60,
 	},
 
 	pos3: {
 		top: 290,
-		left: 90,
+		left: 60,
 	},
 
 	pos4: {
 		top: 290,
-		left: 90,
+		left: 60,
 	},
 
 	pos5: {
 		top: 290,
-		left: 90,
+		left: 60,
 	},
 });
 

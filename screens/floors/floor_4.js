@@ -296,6 +296,7 @@ const FloorMap4 = () => {
 				style={styles.backgroundImage}
 				source={require("../../assets/images/4th_floor.png")}
 			>
+				<Text style={styles.floor_text}>Fourth Floor</Text>
 				<Svg
 					height={rows * cellSize}
 					width={cols * cellSize}
@@ -365,6 +366,14 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		backgroundColor: "#fff",
+	},
+	floor_text: {
+		color: "white",
+		position: "absolute",
+		fontFamily: "plusrounded_bold",
+		fontSize: 24,
+		top: 20,
+		left: 30,
 	},
 	backgroundImage: {
 		flex: 1,
