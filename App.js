@@ -7,6 +7,7 @@ import FireExstinguisher from "./screens/fire_exstinguisher";
 import FireExit from "./screens/fire_exit";
 import FirstAid from "./screens/first_aid";
 import PathFinder from "./screens/path";
+import VoiceRecognition from "./screens/speech_to_text";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ function App() {
 				<Stack.Screen name="FirstAid" component={FirstAid} />
 				<Stack.Screen name="FireExit" component={FireExit} />
 				<Stack.Screen name="PathFinder" component={PathFinder} />
+				<Stack.Screen name="stt" component={VoiceRecognition} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
