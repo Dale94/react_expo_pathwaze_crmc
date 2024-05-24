@@ -77,57 +77,57 @@ const PathFinder = ({ navigation }) => {
 					destinationvalue == "psychology_office" ||
 					destinationvalue == "research_office") && <FloorMap1 />}
 
-				{(locationvalue == "203" ||
-					locationvalue == "204" ||
-					locationvalue == "205" ||
-					locationvalue == "206" ||
-					locationvalue == "207" ||
-					locationvalue == "208" ||
-					locationvalue == "209" ||
-					locationvalue == "principal" ||
-					locationvalue == "speech_lab" ||
-					locationvalue == "prop_custodian" ||
-					locationvalue == "coc_dean" ||
-					locationvalue == "coc_faculty" ||
-					locationvalue == "com_lab_1" ||
-					locationvalue == "com_lab_2" ||
-					locationvalue == "com_lab_3" ||
-					locationvalue == "com_lab_4" ||
-					locationvalue == "sao") && <FloorMap2 />}
+				{(destinationvalue == "203" ||
+					destinationvalue == "204" ||
+					destinationvalue == "205" ||
+					destinationvalue == "206" ||
+					destinationvalue == "207" ||
+					destinationvalue == "208" ||
+					destinationvalue == "209" ||
+					destinationvalue == "principal" ||
+					destinationvalue == "speech_lab" ||
+					destinationvalue == "prop_custodian" ||
+					destinationvalue == "coc_dean" ||
+					destinationvalue == "coc_faculty" ||
+					destinationvalue == "com_lab_1" ||
+					destinationvalue == "com_lab_2" ||
+					destinationvalue == "com_lab_3" ||
+					destinationvalue == "com_lab_4" ||
+					destinationvalue == "sao") && <FloorMap2 />}
 
-				{(locationvalue == "312" ||
-					locationvalue == "313" ||
-					locationvalue == "314" ||
-					locationvalue == "315" ||
-					locationvalue == "316" ||
-					locationvalue == "317" ||
-					locationvalue == "318" ||
-					locationvalue == "319" ||
-					locationvalue == "ccs_dean" ||
-					locationvalue == "ccs_faculty" ||
-					locationvalue == "scholarship_office" ||
-					locationvalue == "sci_lab" ||
-					locationvalue == "college_lib" ||
-					locationvalue == "college_lib_ex" ||
-					locationvalue == "cJe_dean") && <FloorMap3 />}
+				{(destinationvalue == "312" ||
+					destinationvalue == "313" ||
+					destinationvalue == "314" ||
+					destinationvalue == "315" ||
+					destinationvalue == "316" ||
+					destinationvalue == "317" ||
+					destinationvalue == "318" ||
+					destinationvalue == "319" ||
+					destinationvalue == "ccs_dean" ||
+					destinationvalue == "ccs_faculty" ||
+					destinationvalue == "scholarship_office" ||
+					destinationvalue == "sci_lab" ||
+					destinationvalue == "college_lib" ||
+					destinationvalue == "college_lib_ex" ||
+					destinationvalue == "cJe_dean") && <FloorMap3 />}
 
-				{(locationvalue == "422" ||
-					locationvalue == "423" ||
-					locationvalue == "425" ||
-					locationvalue == "424" ||
-					locationvalue == "426" ||
-					locationvalue == "427" ||
-					locationvalue == "428" ||
-					locationvalue == "429" ||
-					locationvalue == "avr" ||
-					locationvalue == "Rooftop") && <FloorMap4 />}
+				{(destinationvalue == "422" ||
+					destinationvalue == "423" ||
+					destinationvalue == "425" ||
+					destinationvalue == "424" ||
+					destinationvalue == "426" ||
+					destinationvalue == "427" ||
+					destinationvalue == "428" ||
+					destinationvalue == "429" ||
+					destinationvalue == "avr" ||
+					destinationvalue == "Rooftop") && <FloorMap4 />}
 
-				{(locationvalue == "532" ||
-					locationvalue == "533" ||
-					locationvalue == "534" ||
-					locationvalue == "535" ||
-					locationvalue == "536" ||
-					locationvalue == "dyvl") && <FloorMap5 />}
+				{(destinationvalue == "532" ||
+					destinationvalue == "533" ||
+					destinationvalue == "534" ||
+					destinationvalue == "535" ||
+					destinationvalue == "536" ||
+					destinationvalue == "dyvl") && <FloorMap5 />}
 			</View>
 		</View>
 	);
