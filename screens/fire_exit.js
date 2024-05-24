@@ -8,13 +8,8 @@ import {
 	Dimensions,
 	TouchableOpacity,
 } from "react-native";
-import {
-	Fontisto,
-	FontAwesome6,
-	MaterialCommunityIcons,
-} from "@expo/vector-icons";
+import { Fontisto } from "@expo/vector-icons";
 import { useFonts } from "expo-font";
-import { Dropdown } from "react-native-element-dropdown";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const FirstAid = ({ navigation }) => {
@@ -23,6 +18,7 @@ const FirstAid = ({ navigation }) => {
 	});
 
 	const [locationvalue, setLocationValue] = useState(null);
+	const [imageLayout, setImageLayout] = useState(null);
 
 	useEffect(() => {
 		const getLocation_Destination = async () => {
@@ -30,11 +26,16 @@ const FirstAid = ({ navigation }) => {
 		};
 
 		getLocation_Destination();
-	});
+	}, []);
 
 	const go_home = async () => {
 		await AsyncStorage.removeItem("location");
 		navigation.push("Home");
+	};
+
+	const onImageLayout = (event) => {
+		const { x, y, width, height } = event.nativeEvent.layout;
+		setImageLayout({ x, y, width, height });
 	};
 
 	// Show a loading indicator while the fonts are loading
@@ -66,9 +67,20 @@ const FirstAid = ({ navigation }) => {
 				<ImageBackground
 					style={styles.background_image}
 					source={require("../assets/images/1st_floor.png")}
+					onLayout={onImageLayout}
 				>
 					<Text style={styles.floor_text}>First Floor</Text>
-					<View style={[styles.circle, styles.pos1]}></View>
+					{imageLayout && (
+						<View
+							style={[
+								styles.circle,
+								{
+									top: imageLayout.y + imageLayout.height * 0.34,
+									left: imageLayout.x + imageLayout.width * 0.1,
+								},
+							]}
+						></View>
+					)}
 				</ImageBackground>
 			</View>
 		</View>
@@ -132,12 +144,12 @@ const styles = StyleSheet.create({
 	},
 
 	circle: {
+		position: "absolute",
 		borderWidth: 4,
 		borderColor: "red",
 		width: 60,
 		height: 60,
 		borderRadius: 50,
-
 		backgroundColor: "rgba(128, 128, 128, 0.3)",
 	},
 
@@ -148,11 +160,6 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		top: 20,
 		left: 30,
-	},
-
-	pos1: {
-		top: imageWidth - 100,
-		left: "10%",
 	},
 });
 

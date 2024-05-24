@@ -19,7 +19,7 @@ import {
 import { useFonts } from "expo-font";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const VoiceRecognition = ({ navigation }) => {
+const VoiceRecognition2 = ({ navigation }) => {
 	const [fontsLoaded] = useFonts({
 		plusrounded_bold: require("../assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf"),
 	});
@@ -34,12 +34,12 @@ const VoiceRecognition = ({ navigation }) => {
 	useEffect(() => {
 		const getLocation_Destination = async () => {
 			if (value) {
-				await AsyncStorage.setItem("location", value);
+				await AsyncStorage.setItem("destination", value);
 				setLocationValue(value);
 				setunhide(false);
 			}
 			if (locationvalue) {
-				navigation.push("stt2");
+				navigation.push("PathFinder");
 			}
 			// // const location = await AsyncStorage.getItem("location");
 
@@ -311,10 +311,9 @@ const VoiceRecognition = ({ navigation }) => {
 										<Text style={styles.crmc_text}>COLLEGES</Text>
 									</View>
 								</View>
-
 								<View style={styles.container}>
 									<Text style={styles.transcriptionText}>
-										Say your location:
+										Say your destination:
 									</Text>
 									<Button
 										color="red"
@@ -337,6 +336,40 @@ const VoiceRecognition = ({ navigation }) => {
 									) : null}
 								</View>
 							</ImageBackground>
+						</View>
+					</View>
+					<View style={styles.footer}>
+						<View style={styles.icon_group}>
+							<TouchableOpacity
+								onPress={() => navigation.push("FireExstinguisher")}
+							>
+								<FontAwesome6
+									style={styles.fire_extinguisher}
+									name="fire-extinguisher"
+									size={32}
+									color="white"
+								/>
+								<Text style={styles.icon_text}>Fire Extinguisher</Text>
+							</TouchableOpacity>
+							<TouchableOpacity onPress={() => navigation.push("FirstAid")}>
+								<Fontisto
+									style={styles.first_aid}
+									name="first-aid-alt"
+									size={32}
+									color="white"
+								></Fontisto>
+								<Text style={styles.icon_text}>First Aid Kit</Text>
+							</TouchableOpacity>
+							<TouchableOpacity onPress={() => navigation.push("FireExit")}>
+								<MaterialCommunityIcons
+									style={styles.fire_exit}
+									name="exit-run"
+									size={32}
+									color="white"
+								/>
+
+								<Text style={styles.icon_text}>Fire Exit</Text>
+							</TouchableOpacity>
 						</View>
 					</View>
 				</ImageBackground>
@@ -539,4 +572,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default VoiceRecognition;
+export default VoiceRecognition2;

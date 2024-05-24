@@ -137,9 +137,11 @@ const HomeScreen = ({ navigation }) => {
 				</View>
 				<View style={styles.dashboard}>
 					<Text style={styles.text_dashboard}>DASHBOARD</Text>
-					<TouchableOpacity onPress={() => navigation.push("stt")}>
-						<FontAwesome name="microphone" size={24} color="red" />
-					</TouchableOpacity>
+					{unhide && (
+						<TouchableOpacity onPress={() => navigation.push("stt")}>
+							<FontAwesome name="microphone" size={24} color="red" />
+						</TouchableOpacity>
+					)}
 				</View>
 			</View>
 			<View style={styles.body}>
