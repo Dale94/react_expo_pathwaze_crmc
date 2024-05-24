@@ -221,7 +221,7 @@ const FloorMap1 = () => {
 				return grid[52][12];
 			case "clinic":
 				return grid[56][8];
-			case "drm":
+			case "drrm":
 				return grid[57][4];
 			default:
 				return grid[3][1];
@@ -250,7 +250,7 @@ const FloorMap1 = () => {
 				return grid[52][12];
 			case "clinic":
 				return grid[56][8];
-			case "drm":
+			case "drrm":
 				return grid[57][4];
 			case "cr_female":
 				return grid[31][35];
