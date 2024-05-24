@@ -151,8 +151,8 @@ const styles = StyleSheet.create({
 	},
 
 	pos1: {
-		top: 260,
-		left: 20,
+		top: imageWidth - 100,
+		left: "10%",
 	},
 });
 

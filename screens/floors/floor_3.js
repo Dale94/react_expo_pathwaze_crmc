@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo, useCallback, Text } from "react";
-import { View, StyleSheet, ImageBackground } from "react-native";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
+import { View, StyleSheet, ImageBackground, Text } from "react-native";
 import Svg, { Rect, Line, Circle } from "react-native-svg";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 

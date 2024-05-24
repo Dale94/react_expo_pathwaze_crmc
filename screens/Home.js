@@ -372,8 +372,8 @@ const styles = StyleSheet.create({
 	//dropdown
 
 	dropdown: {
-		height: 40,
-		width: 240,
+		height: "10%",
+		width: "80%",
 		top: -100,
 		alignSelf: "center",
 		borderColor: "gray",
@@ -399,8 +399,8 @@ const styles = StyleSheet.create({
 		fontSize: 14,
 	},
 	iconStyle: {
-		width: 25,
-		height: 40,
+		width: "10%",
+		height: "122%",
 		left: 8,
 		borderRadius: 8,
 		backgroundColor: "red",
