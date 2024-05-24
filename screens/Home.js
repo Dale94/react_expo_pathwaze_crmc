@@ -10,7 +10,7 @@ import {
 import {
 	Fontisto,
 	FontAwesome6,
-	FontAwesome5,
+	FontAwesome,
 	MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import { useFonts } from "expo-font";
@@ -137,9 +137,9 @@ const HomeScreen = ({ navigation }) => {
 				</View>
 				<View style={styles.dashboard}>
 					<Text style={styles.text_dashboard}>DASHBOARD</Text>
-					<TouchableOpacity
-						onPress={() => navigation.push("Stt")}
-					></TouchableOpacity>
+					<TouchableOpacity onPress={() => navigation.push("stt")}>
+						<FontAwesome name="microphone" size={24} color="red" />
+					</TouchableOpacity>
 				</View>
 			</View>
 			<View style={styles.body}>
